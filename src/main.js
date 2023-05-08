@@ -16,8 +16,8 @@ import './icons' // icon
 Vue.prototype.global = global_variable
 
 //默认的跨域url，后端的端口号为8181
-// axios.defaults.baseURL = 'http://www.moreluck.cc:8000'
-axios.defaults.baseURL = 'http://localhost:8181'
+axios.defaults.baseURL = 'http://www.moreluck.cc:8000'
+// axios.defaults.baseURL = 'http://localhost:8181'
 axios.interceptors.request.use(config => {
   //Token
  config.headers.Token = window.sessionStorage.getItem('token')
